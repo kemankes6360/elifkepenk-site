@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elif Otomatik Kapı Sistemleri | elifkepenk.com.tr | Darıca - İzmit &amp; İstanbul Anadolu Yakası Servis</title>
+  <link rel="canonical" href="https://elifkepenk.com.tr/">
+  <meta name="description" content="Elif Otomatik Kapı Sistemleri: Kocaeli Darıca merkezimizden İstanbul Anadolu Yakası ve İzmit arası tüm ilçe ve mahallelere kepenk, fotoselli kapı, bariyer montaj ve servisi. Tüm Türkiye'ye yedek parça kargo. Hemen arayın: 0542 113 41 32">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card: #131c31;
+      --card-hover: #1a2642;
+      --border: #263554;
+      --amber: #f59e0b;
+      --amber-dark: #d97706;
+      --green: #10b981;
+      --blue: #38bdf8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    /* Üst Bilgi Şeridi */
+    .topbar {
+      background: #070b14;
+      border-bottom: 1px solid var(--border);
+      font-size: 13.5px;
+      padding: 8px 0;
+    }
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .badge-top {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--amber);
+      color: #fde68a;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 12.5px;
+    }
+
+    /* Navigasyon */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 17, 32, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo span {
+      background: var(--amber);
+      color: #0b1120;
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-weight: 900;
+    }
+    .nav-links { display: flex; gap: 20px; font-size: 14.5px; font-weight: 600; color: var(--muted); }
+    .nav-links a:hover { color: #fff; }
+    .nav-actions { display: flex; gap: 10px; align-items: center; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.12s, background 0.15s;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn-call { background: var(--amber); color: #0b1120; }
+    .btn-call:hover { background: var(--amber-dark); color: #fff; }
+    .btn-wa { background: var(--green); color: #06281e; }
+    .btn-outline { background: var(--card); border: 1px solid var(--border); color: var(--text); }
+
+    /* Hero */
+    .hero {
+      padding: 52px 0 40px;
+      background: radial-gradient(circle at 80% 20%, rgba(245,158,11,0.14), transparent 55%),
+                  radial-gradient(circle at 15% 80%, rgba(56,189,248,0.10), transparent 50%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 28px;
+      align-items: center;
+    }
+    @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      margin: 12px 0 14px;
+    }
+    .hero h1 em {
+      color: var(--amber);
+      font-style: normal;
+    }
+    .hero p { color: var(--muted); font-size: 17px; margin: 0 0 22px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+    .hero-cta .btn { padding: 14px 22px; font-size: 16px; }
+    .notice-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--amber);
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .hero-panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .hero-panel h3 { margin: 0 0 12px; color: var(--amber); font-size: 18px; }
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14.5px;
+    }
+    .check-list li:last-child { border-bottom: none; }
+
+    /* Bölüm Başlıkları */
+    section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+    .sec-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .sec-head h2 { margin: 0; font-size: 28px; }
+    .sec-head p { margin: 4px 0 0; color: var(--muted); }
+
+    /* Kategori Filtreleri */
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+    .filter-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 15px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13.5px;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--amber);
+      color: #0b1120;
+      border-color: var(--amber);
+    }
+
+    /* Ürün Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 18px;
+    }
+    .prod-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .prod-card:hover { border-color: var(--amber); transform: translateY(-2px); }
+    .prod-icon {
+      height: 120px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin-bottom: 14px;
+      position: relative;
+    }
+    .kargo-tag {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(16, 185, 129, 0.18);
+      border: 1px solid var(--green);
+      color: #6ee7b7;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .prod-cat { font-size: 12px; color: var(--blue); font-weight: 600; text-transform: uppercase; }
+    .prod-title { font-size: 16.5px; font-weight: 700; margin: 4px 0 8px; }
+    .prod-desc { font-size: 13.5px; color: var(--muted); margin: 0 0 14px; }
+    .prod-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+    .prod-code { font-size: 12px; color: var(--muted); }
+
+    /* Hizmet Kartları */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .srv-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .srv-card h3 { margin: 0 0 8px; color: var(--amber); }
+    .srv-card p { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+
+    /* Hizmet Bölgeleri */
+    .region-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 760px) { .region-box { grid-template-columns: 1fr; } }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+    .chip {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    /* Sepet Çekmecesi (Modal) */
+    .cart-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: flex-end;
+      z-index: 100;
+    }
+    .cart-modal.open { display: flex; }
+    .cart-panel {
+      width: 100%;
+      max-width: 430px;
+      background: var(--card);
+      height: 100%;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+      border-left: 1px solid var(--border);
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .qty-btn {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      color: #fff;
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #0b1120;
+      color: #fff;
+      font-family: inherit;
+    }
+
+    /* Sabit Mobil Alt Arama Çubuğu */
+    .sticky-bar {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      gap: 10px;
+      z-index: 80;
+    }
+    footer { padding: 32px 0 70px; color: var(--muted); font-size: 13.5px; }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Şerit -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div>📍 <b>Merkez:</b> Kocaeli / Darıca &nbsp;|&nbsp; 🚐 <b>Servis & Montaj:</b> İstanbul Anadolu Yakası – İzmit Arası Tüm İlçeler</div>
+      <div><span class="badge-top">🌐 elifkepenk.com.tr · 81 İle Kargo</span> &nbsp; ☎️ Müşteri Hattı: <a href="tel:+905421134132"><b>0542 113 41 32</b></a></div>
+    </div>
+  </div>
+
+  <!-- Üst Menü -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo"><span>ELİF</span> Otomatik Kapı Sistemleri</a>
+      <nav class="nav-links">
+        <a href="#magaza">Yedek Parça Mağazası (81 İl)</a>
+        <a href="#hizmetler">Montaj & Servis</a>
+        <a href="#bolgeler">Hizmet Bölgeleri</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-outline" onclick="sepetAcKapat(true)">
+          🛒 Sepetim (<span id="sepet-sayac">0</span>)
+        </button>
+        <a class="btn btn-call" href="tel:+905421134132">📞 0542 113 41 32</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge-top">Darıca Merkezli Uzman Kadro · 81 İle Yedek Parça</span>
+        <h1>Otomatik Kepenk, Fotoselli Kapı &amp; <em>Yedek Parça</em> Merkezi</h1>
+        <p>
+          <b>İstanbul Anadolu Yakası ve Kocaeli (Darıca – İzmit hattı)</b> tüm ilçe ve mahallelerine
+          otomatik kepenk, fotoselli kapı, garaj kapısı ve bariyer <b>montaj &amp; servis</b> hizmeti.
+          Motor, kumanda ve yedek parça alımlarında <b>tüm Türkiye'ye kargo!</b>
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-call" href="tel:+905421134132" onclick="donusumKaydet('telefon_arama')">
+            📞 Hemen Arayın: 0542 113 41 32
+          </a>
+          <a class="btn btn-wa" href="https://wa.me/905421134132?text=Merhaba%20Elif%20Otomatik%20Kap%C4%B1%2C%20servis%20%2F%20yedek%20par%C3%A7a%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" onclick="donusumKaydet('whatsapp_tiklama')">
+            💬 WhatsApp'tan Ulaşın
+          </a>
+          <a class="btn btn-outline" href="#magaza">📦 Yedek Parça Siparişi</a>
+        </div>
+        <div class="notice-box">
+          ℹ️ <b>Servis ve Keşif Bilgilendirmesi:</b> Firmamızda ücretsiz keşif veya ücretsiz servis uygulaması bulunmamaktadır.
+          Servis, arıza tespiti, montaj ve güncel fiyat bilgisi için doğrudan <b>0542 113 41 32</b> numaramızdan bizi arayabilirsiniz.
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <h3>⚡ Neden Elif Otomatik Kapı?</h3>
+        <ul class="check-list">
+          <li>✅ <b>Merkez Darıca / Kocaeli:</b> Anadolu Yakası ve İzmit hattına hızlı ulaşım</li>
+          <li>✅ <b>81 İle Yedek Parça Kargo:</b> Tüp motor, santral motor, alıcı kart, kumanda, UPS</li>
+          <li>✅ <b>Usta Desteği:</b> Hangi motor veya kartın uyacağını doğrudan ustamıza sorun</li>
+          <li>✅ <b>Sağlam Malzeme:</b> Çelik ve alüminyum poliüretanlı kepenk, seksiyonel ve fotoselli kapı</li>
+          <li>✅ <b>Doğrudan Muhatap:</b> Aracı yok, doğrudan usta ve firma sahibiyle görüşün</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- E-TİCARET YEDEK PARÇA MAĞAZASI -->
+  <section id="magaza">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <h2>📦 Online Yedek Parça Mağazası (Tüm Türkiye'ye Kargo)</h2>
+          <p>İhtiyacınız olan parçaları sepete ekleyin ve <b>WhatsApp'a Gönder</b> butonuna basın; güncel fiyat teklifinizi ve kargo bilgisini WhatsApp'tan anında iletelim.</p>
+        </div>
+        <button class="btn btn-wa" onclick="sepetAcKapat(true)">💬 Sepet &amp; WhatsApp Fiyat Al (<span id="sepet-sayac-2">0</span> ürün)</button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" onclick="kategoriFiltrele('hepsi', this)">Tüm Ürünler</button>
+        <button class="filter-btn" onclick="kategoriFiltrele('motor', this)">Kepenk Motorları</button>
+        <button class="filter-btn" onclick="kategoriFiltrele('kumanda', this)">Kumanda &amp; Alıcı Kart</button>
+        <button class="filter-btn" onclick="kategoriFiltrele('fotosel', this)">Fotoselli Kapı &amp; Sensör</button>
+        <button class="filter-btn" onclick="kategoriFiltrele('ups', this)">Güç Kaynağı (UPS) &amp; Aksesuar</button>
+      </div>
+
+      <div class="products" id="urun-listesi"></div>
+    </div>
+  </section>
+
+  <!-- MONTAJ VE SERVİS HİZMETLERİ -->
+  <section id="hizmetler">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <h2>🔧 Montaj ve Servis Hizmetlerimiz</h2>
+          <p>Kocaeli (Darıca – İzmit arası) ve İstanbul Anadolu Yakası tüm ilçe ve mahallelerine profesyonel uygulama.</p>
+        </div>
+        <a class="btn btn-call" href="tel:+905421134132">📞 Servis İçin Arayın: 0542 113 41 32</a>
+      </div>
+
+      <div class="services">
+        <div class="srv-card">
+          <h3>🚪 Otomatik Kepenk Montaj &amp; Tamir</h3>
+          <p>Dükkân, mağaza, depo ve garajlar için çelik ve alüminyum motorlu kepenk imalatı, montajı, motor değişimi, yay ve lamel tamiri.</p>
+          <a class="btn btn-call" href="tel:+905421134132">📞 Hemen Ara</a>
+        </div>
+        <div class="srv-card">
+          <h3>🏢 Fotoselli Cam Kapı Sistemleri</h3>
+          <p>Market, eczane, mağaza ve iş merkezleri için radarlı otomatik yana kayar fotoselli kapı montajı, kayış, motor ve kart servisi.</p>
+          <a class="btn btn-call" href="tel:+905421134132">📞 Hemen Ara</a>
+        </div>
+        <div class="srv-card">
+          <h3>🏠 Otomatik Garaj &amp; Seksiyonel Kapı</h3>
+          <p>Müstakil konut, site ve fabrika girişleri için tavana kayar seksiyonel ve sarmal garaj kapısı kurulumu ve arıza servisi.</p>
+          <a class="btn btn-call" href="tel:+905421134132">📞 Hemen Ara</a>
+        </div>
+        <div class="srv-card">
+          <h3>🚧 Otopark Bariyer Sistemleri</h3>
+          <p>Site, apartman ve işyeri otoparkları için 3-6 metre kollu bariyer sistemleri, kumanda tanımlama ve emniyet fotoseli kurulumu.</p>
+          <a class="btn btn-call" href="tel:+905421134132">📞 Hemen Ara</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HİZMET BÖLGELERİ -->
+  <section id="bolgeler">
+    <div class="container">
+      <div class="sec-head">
+        <div>
+          <h2>📍 Hizmet Bölgelerimiz</h2>
+          <p>Servis araçlarımız Darıca merkezimizden her gün İstanbul Anadolu Yakası ve İzmit hattına çıkmaktadır.</p>
+        </div>
+      </div>
+
+      <div class="region-box">
+        <div class="srv-card">
+          <h3>🏙️ Kocaeli (Darıca – İzmit Hattı Tüm İlçeler)</h3>
+          <p>Merkezimiz Darıca'dan tüm Kocaeli ilçe ve mahallelerine montaj ve arıza servisi:</p>
+          <div class="chips">
+            <span class="chip"><b>Darıca (Merkez)</b></span>
+            <span class="chip">Gebze</span>
+            <span class="chip">Çayırova</span>
+            <span class="chip">Dilovası</span>
+            <span class="chip">Körfez</span>
+            <span class="chip">Derince</span>
+            <span class="chip">İzmit</span>
+            <span class="chip">Şekerpınar</span>
+            <span class="chip">GOSB / Organize Sanayi</span>
+          </div>
+        </div>
+
+        <div class="srv-card">
+          <h3>🌉 İstanbul Anadolu Yakası (Tüm İlçe ve Mahalleler)</h3>
+          <p>Anadolu Yakası'ndaki tüm işyeri, mağaza, site ve sanayi bölgelerine hızlı servis:</p>
+          <div class="chips">
+            <span class="chip">Tuzla</span>
+            <span class="chip">Pendik</span>
+            <span class="chip">Kartal</span>
+            <span class="chip">Maltepe</span>
+            <span class="chip">Sultanbeyli</span>
+            <span class="chip">Sancaktepe</span>
+            <span class="chip">Çekmeköy</span>
+            <span class="chip">Ataşehir</span>
+            <span class="chip">Ümraniye</span>
+            <span class="chip">Kadıköy</span>
+            <span class="chip">Üsküdar</span>
+            <span class="chip">Beykoz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim">
+    <div class="container">
+      <div class="srv-card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px;">
+        <div>
+          <h2 style="margin:0 0 6px;">Servis, Montaj veya Yedek Parça İçin Hemen Arayın</h2>
+          <p style="margin:0;">Merkez: <b>Darıca / Kocaeli</b> &nbsp;|&nbsp; Telefon &amp; WhatsApp: <b>0542 113 41 32</b> &nbsp;|&nbsp; E-posta: <b>kemankes6360@gmail.com</b></p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn btn-call" href="tel:+905421134132">📞 0542 113 41 32 Hemen Ara</a>
+          <a class="btn btn-wa" href="https://wa.me/905421134132" target="_blank" rel="noopener">💬 WhatsApp Hattı</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:10px;">
+      <div>© 2026 <b>Elif Otomatik Kapı Sistemleri (elifkepenk.com.tr)</b> — Darıca / Kocaeli. Tüm hakları saklıdır.</div>
+      <div style="display:flex; gap:14px; font-weight:600;">
+        <a href="https://www.instagram.com/elifotomatikkapi" target="_blank" rel="noopener">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@elifotomatikkapi" target="_blank" rel="noopener">🎵 TikTok (@elifotomatikkapi)</a>
+        <a href="https://x.com/elifotomatikkapi" target="_blank" rel="noopener">𝕏 Twitter/X</a>
+      </div>
+    </div>
+    <div style="margin-top:6px; font-size:12px;">
+      🛡️ Bu site <b>Elif Tıklama Kalkanı</b> ile sahte reklam tıklamalarına ve bot saldırılarına karşı korunmaktadır.
+      Durum: <span id="kalkan-durum" style="color:#10b981;">Aktif (Oturum Güvenli)</span>
+    </div>
+  </footer>
+
+  <!-- Sabit Hızlı Arama Çubuğu -->
+  <div class="sticky-bar">
+    <a class="btn btn-wa" href="https://wa.me/905421134132" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="btn btn-call" href="tel:+905421134132">📞 Hemen Ara: 0542 113 41 32</a>
+  </div>
+
+  <!-- SEPET MODALI -->
+  <div class="cart-modal" id="sepet-modal">
+    <div class="cart-panel">
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); padding-bottom:12px;">
+          <h3 style="margin:0;">🛒 Yedek Parça Sepeti (WhatsApp Fiyat &amp; Sipariş)</h3>
+          <button class="btn btn-outline" style="padding:6px 12px;" onclick="sepetAcKapat(false)">✕ Kapat</button>
+        </div>
+        <p style="font-size:13px; color:var(--muted);">Sitede sabit fiyat yer almaz. Seçtiğiniz ürünleri WhatsApp'a gönderdiğinizde güncel fiyat ve 81 ile kargo bilgisi doğrudan tarafınıza iletilir.</p>
+        <div id="sepet-icerik"></div>
+      </div>
+
+      <div>
+        <label style="font-size:13px; font-weight:600;">Adınız Soyadınız / Firma Adı</label>
+        <input id="mus-ad" placeholder="Örn: Ahmet Yılmaz">
+        <label style="font-size:13px; font-weight:600; display:block; margin-top:8px;">Telefon Numaranız</label>
+        <input id="mus-tel" placeholder="05XX XXX XX XX">
+        <label style="font-size:13px; font-weight:600; display:block; margin-top:8px;">Kargo İli / İlçesi</label>
+        <input id="mus-adres" placeholder="Örn: Ankara / Çankaya">
+        <div style="display:flex; flex-direction:column; gap:8px; margin-top:14px;">
+          <button class="btn btn-wa" style="justify-content:center; font-size:15px; padding:13px;" onclick="siparisiWhatsappGonder()">
+            💬 Sepeti WhatsApp'a Gönder &amp; Fiyat Al
+          </button>
+          <a class="btn btn-call" style="justify-content:center;" href="tel:+905421134132">
+            📞 Telefonla Fiyat Sor: 0542 113 41 32
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // E-Ticaret Yedek Parça Ürün Kataloğu (Tüm Türkiye Kargo)
+    const URUNLER = [
+      { id: "MTR-100", kat: "motor", ikon: "⚙️", ad: "Kepenk Tüp Motoru 100 Nm", aciklama: "Standart ve orta boy otomatik kepenkler için sessiz, uzun ömürlü boru tipi kepenk motoru." },
+      { id: "MTR-140R", kat: "motor", ikon: "🔩", ad: "Kepenk Tüp Motoru 140 Nm (Redüktörlü)", aciklama: "Geniş ve ağır kepenkler için elektrik kesintisinde manuel kolla açılabilen redüktörlü güçlü motor." },
+      { id: "MTR-SNT", kat: "motor", ikon: "🏗️", ad: "Santral Kepenk Motoru (Frenli)", aciklama: "Yoğun kullanılan mağaza ve depo kepenkleri için yüksek taşıma kapasiteli santral motor." },
+      { id: "KMD-4K", kat: "kumanda", ikon: "🎛️", ad: "Otomatik Kepenk & Bariyer Kumandası", aciklama: "4 kanallı, sağlam kasalı, kepenk ve otopark bariyer sistemleriyle uyumlu uzaktan kumanda." },
+      { id: "KRT-SET", kat: "kumanda", ikon: "📟", ad: "Kepenk Alıcı Kart + 2 Kumanda Seti", aciklama: "Mevcut kepenginizi uzaktan kumandalı hale getiren hazır alıcı kontrol kartı ve 2 adet kumanda." },
+      { id: "UPS-GUC", kat: "ups", ikon: "🔋", ad: "Kepenk Güç Kaynağı (UPS)", aciklama: "Elektrik kesildiğinde kepenginizin kumandayla açılıp kapanmasını sağlayan akülü güç kaynağı." },
+      { id: "FTS-GOZ", kat: "fotosel", ikon: "👁️", ad: "Emniyet Fotoseli (Fotosel Göz Takımı)", aciklama: "Kepenk veya bariyer kapanırken altından araç/insan geçtiğinde sistemi durduran güvenlik sensörü." },
+      { id: "FTS-RDR", kat: "fotosel", ikon: "📡", ad: "Fotoselli Kapı Mikrodalga Radar Sensörü", aciklama: "Otomatik yana kayar cam kapılar için hassas algılamalı hareket sensörü (radar)." }
+    ];
+
+    let sepet = {};
+    let aktifKategori = "hepsi";
+
+    function urunleriCiz() {
+      const kutu = document.getElementById("urun-listesi");
+      const liste = aktifKategori === "hepsi" ? URUNLER : URUNLER.filter(u => u.kat === aktifKategori);
+      kutu.innerHTML = liste.map(u => `
+        <div class="prod-card">
+          <div>
+            <div class="prod-icon">
+              <span>${u.ikon}</span>
+              <span class="kargo-tag">81 İle Kargo</span>
+            </div>
+            <div class="prod-cat">${u.kat.toUpperCase()}</div>
+            <div class="prod-title">${u.ad}</div>
+            <p class="prod-desc">${u.aciklama}</p>
+          </div>
+          <div class="prod-foot">
+            <span class="prod-code">💬 <b>Fiyat: WhatsApp'ta</b><br><small>Kod: ${u.id}</small></span>
+            <button class="btn btn-wa" style="padding:9px 14px; font-size:13px;" onclick="sepeteEkle('${u.id}')">
+              🛒 Sepete Ekle &amp; Fiyat Al
+            </button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function kategoriFiltrele(kat, btn) {
+      aktifKategori = kat;
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      urunleriCiz();
+    }
+
+    function sepeteEkle(id) {
+      sepet[id] = (sepet[id] || 0) + 1;
+      sepetGuncelle();
+      sepetAcKapat(true);
+    }
+
+    function adetDegistir(id, fark) {
+      sepet[id] = (sepet[id] || 0) + fark;
+      if (sepet[id] <= 0) delete sepet[id];
+      sepetGuncelle();
+    }
+
+    function sepetGuncelle() {
+      const toplamAdet = Object.values(sepet).reduce((a, b) => a + b, 0);
+      document.getElementById("sepet-sayac").textContent = toplamAdet;
+      document.getElementById("sepet-sayac-2").textContent = toplamAdet;
+
+      const icerik = document.getElementById("sepet-icerik");
+      if (toplamAdet === 0) {
+        icerik.innerHTML = `<p style="color:var(--muted); padding:20px 0;">Sepetinizde henüz ürün yok. Mağazadan yedek parça ekleyebilirsiniz.</p>`;
+        return;
+      }
+      icerik.innerHTML = Object.entries(sepet).map(([id, adet]) => {
+        const u = URUNLER.find(x => x.id === id);
+        return `
+          <div class="cart-item">
+            <div><b>${u.ad}</b><br><span style="font-size:12px; color:var(--muted);">Kod: ${u.id}</span></div>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <button class="qty-btn" onclick="adetDegistir('${id}', -1)">-</button>
+              <b>${adet}</b>
+              <button class="qty-btn" onclick="adetDegistir('${id}', 1)">+</button>
+            </div>
+          </div>`;
+      }).join("");
+    }
+
+    function sepetAcKapat(ac) {
+      document.getElementById("sepet-modal").classList.toggle("open", ac);
+    }
+
+    function siparisiWhatsappGonder() {
+      const satirlar = Object.entries(sepet).map(([id, adet]) => {
+        const u = URUNLER.find(x => x.id === id);
+        return `- ${u.ad} (${u.id}) x ${adet} adet`;
+      });
+      if (satirlar.length === 0) {
+        alert("Lütfen önce sepete ürün ekleyin.");
+        return;
+      }
+      const ad = document.getElementById("mus-ad").value.trim() || "Belirtilmedi";
+      const tel = document.getElementById("mus-tel").value.trim() || "Belirtilmedi";
+      const adres = document.getElementById("mus-adres").value.trim() || "Belirtilmedi";
+
+      const mesaj = [
+        "Merhaba Elif Otomatik Kapı Sistemleri, web sitenizden seçtiğim şu yedek parçalar için GÜNCEL FİYAT ve kargo bilgisi almak istiyorum:",
+        "",
+        ...satirlar,
+        "",
+        `Müşteri: ${ad}`,
+        `Telefon: ${tel}`,
+        `Kargo İl/İlçe: ${adres}`
+      ].join("\n");
+
+      donusumKaydet("eticaret_siparis");
+      window.open("https://wa.me/905421134132?text=" + encodeURIComponent(mesaj), "_blank");
+    }
+
+    // 4. ASİSTAN: TIKLAMA KALKANI (Ön Yüz Sahte Reklam Tıklaması Tespit Modülü)
+    function kalkanBaslat() {
+      const simdi = Date.now();
+      const gecmis = JSON.parse(localStorage.getItem("elif_kalkan_girisler") || "[]")
+        .filter(z => simdi - z < 15 * 60 * 1000); // son 15 dk
+      gecmis.push(simdi);
+      localStorage.setItem("elif_kalkan_girisler", JSON.stringify(gecmis));
+
+      const durumEl = document.getElementById("kalkan-durum");
+      if (gecmis.length >= 3) {
+        durumEl.textContent = `Şüpheli Tekrar Giriş Tespit Edildi (${gecmis.length} kez) — Kalkan Kaydına Alındı`;
+        durumEl.style.color = "#f87171";
+      }
+    }
+
+    function donusumKaydet(tur) {
+      localStorage.setItem("elif_son_donusum", JSON.stringify({ tur, zaman: new Date().toISOString() }));
+    }
+
+    urunleriCiz();
+    sepetGuncelle();
+    kalkanBaslat();
+  </script>
+</body>
+</html>
